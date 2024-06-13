@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="month.css" />
+  </head>
+  <body>
+    <div>
+      <input type="text" id="type" value="" placeholder="Enter a month" />
+      <button onclick="checkDays()">check</button>
+    </div>
+  </body>
+</html>
+<script>
+  let input = document.getElementById("type");
+  function checkDays() {
+    let userInput = input.value;
+    userInput = userInput.toLowerCase().trim();
+    switch (true) {
+      case userInput === "january":
+        alert("January have 31 days");
+        break;
+      case userInput === "february":
+        alert("February have 28 days and 29 days each leap year");
+        break;
+      case userInput === "march":
+        alert("March have 31 days");
+        break;
+      case userInput === "april":
+        alert("April have 30 days");
+        break;
+      case userInput === "may":
+        alert("May have 31 days");
+        break;
+      case userInput === "june":
+        alert("June have 30 days");
+        break;
+      case userInput === "july":
+        alert("July have 31 days");
+        break;
+      case userInput === "august":
+        alert("August have 31 days");
+        break;
+      case userInput === "september":
+        alert("September have 30 days");
+        break;
+      case userInput === "october":
+        alert("October have 31 days");
+        break;
+      case userInput === "november":
+        alert("November have 30 days");
+        break;
+      case userInput === "december":
+        alert("December have 31 days");
+        break;
+
+      default:
+        alert("you have entered an invalid month");
+        break;
+    }
+  }
+</script>
